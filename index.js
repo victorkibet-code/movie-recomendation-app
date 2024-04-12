@@ -404,6 +404,7 @@ form.addEventListener('submit', (e) => {
 
 })
 
+
 prev.addEventListener('click', () => {
   if(prevPage > 0){
     pageCall(prevPage);
