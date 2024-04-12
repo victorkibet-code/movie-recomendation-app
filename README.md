@@ -25,7 +25,7 @@
        
 ## Live link   
 
-
+github pages ::: https://victorkibet-code.github.io/movie-recomendation-app/
 ## Known Bugs
     The application sometimes dont run json-server.
     Otherwise application works perfectly well, no bugs.
@@ -52,11 +52,7 @@ application is running.
     The application images dissapears in heroku
     Otherwise application works perfectly well, no bugs.
 
-## Technologies used
-    - JS
-    - HTML and CSS
-    - Fontawesome
-    - BOOTSRAP
+
 
 ### License
 *Licenced under the MIT Licence
