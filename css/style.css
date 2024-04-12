@@ -27,4 +27,16 @@ header{
     color:#fff;
     font-family: inherit;
 }
+.search:focus{
+    outline:0;
+    background-color: var(--primary-color);
+}
 
+.search::placeholder{
+    color: rgb(235, 225, 225);
+}
+main{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
