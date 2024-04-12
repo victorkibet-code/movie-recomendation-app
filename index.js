@@ -80,3 +80,49 @@ const genres = [
     }
   ]
 
+
+//database to store user information
+let users = [];
+
+// Function to register a new user
+function registerUser() {
+    const email = document.getElementById("email").value;
+    const password = document.getElementById("password").value;
+
+    // Check if the email is already registered
+    const existingUser = users.find(user => user.email === email);
+    if (existingUser) {
+        alert("Email already exists. Please login instead.");
+        return;
+    }
+
+    // Create a new user object
+    const newUser = {
+        email: email,
+        password: password,
+        loggedIn: false
+    };
+
+    // Add the new user to the database
+    users.push(newUser);
+    alert("Registration successful. You can now login.");
+}
+
+// Function to login a user
+function loginUser() {
+    const email = document.getElementById("loginEmail").value;
+    const password = document.getElementById("loginPassword").value;
+
+    // Find the user with the provided email
+    const user = users.find(user => user.email === email);
+
+    // If user not found or password is incorrect, show error message
+    if (!user || user.password !== password) {
+        alert("Invalid email or password. Please try again.");
+        return;
+    }
+
+    // Set the loggedIn status to true
+    user.loggedIn = true;
+    alert("Login successful. Welcome back!");
+}

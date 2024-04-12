@@ -14,6 +14,20 @@
             <input type="text" placeholder="Search" id="search" class="search">
         </form>
     </header>
+   <!--Registration Form -->
+  <div id="registrationForm" style="display: none;">
+    <h2>Register</h2>
+    <input type="email" id="email" placeholder="Email" required>
+    <input type="password" id="password" placeholder="Password" required>
+    <button onclick="registerUser()">Register</button>
+</div>   <!-- Login Form -->
+<div id="loginForm">
+    <h2>Login</h2>
+    <input type="email" id="loginEmail" placeholder="Email" required>
+    <input type="password" id="loginPassword" placeholder="Password" required>
+    <button onclick="loginUser()">Login</button>
+</div>
+
 
     <script src="index.js"></script>
 </body>
